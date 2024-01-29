@@ -4,12 +4,7 @@ function isEnoughCapacity(products, containerSize) {
   for (let value of objectValues) {
     totalQuantity += value; 
   }
-  if (totalQuantity < containerSize) {
-    return true;
-  }
-  else {
-    return false;
-  }
+  return totalQuantity < containerSize;
 };
 
 console.log(
